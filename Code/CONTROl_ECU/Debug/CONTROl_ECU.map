@@ -1,0 +1,565 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./CONTROL_MainFuncs.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./CONTROL_MainFuncs.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+PassState           0x1               ./CONTROL_MainFuncs.o
+motorFlag           0x1               ./CONTROL_MainFuncs.o
+buzzerFlag          0x1               ./CONTROL_MainFuncs.o
+UART_String         0x14              ./CONTROL_MainFuncs.o
+Motor_State         0x1               ./CONTROL_MainFuncs.o
+i                   0x1               ./CONTROL_MainFuncs.o
+passwordOne         0xa               ./CONTROL_MainFuncs.o
+init                0x2               ./Timer1.o
+g_tick              0x1               ./CONTROL_MainFuncs.o
+Check_State         0x1               ./CONTROL_MainFuncs.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./Buzzer.o
+LOAD ./CONTROL_MainFuncs.o
+LOAD ./Main_CONTROL.o
+LOAD ./Motor.o
+LOAD ./PWM.o
+LOAD ./Timer1.o
+LOAD ./USART.o
+LOAD ./external_eeprom.o
+LOAD ./gpio.o
+LOAD ./twi.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1746
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./Buzzer.o
+ .text          0x00000092        0x0 ./CONTROL_MainFuncs.o
+ .text          0x00000092        0x0 ./Main_CONTROL.o
+ .text          0x00000092        0x0 ./Motor.o
+ .text          0x00000092        0x0 ./PWM.o
+ .text          0x00000092        0x0 ./Timer1.o
+ .text          0x00000092        0x0 ./USART.o
+ .text          0x00000092        0x0 ./external_eeprom.o
+ .text          0x00000092        0x0 ./gpio.o
+ .text          0x00000092        0x0 ./twi.o
+ .text          0x00000092        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Buzzer_init
+                0x00000092       0x22 ./Buzzer.o
+                0x00000092                Buzzer_init
+ .text.Buzzer_on
+                0x000000b4       0x18 ./Buzzer.o
+                0x000000b4                Buzzer_on
+ .text.Buzzer_off
+                0x000000cc       0x18 ./Buzzer.o
+                0x000000cc                Buzzer_off
+ .text.PassIsSetinEEPROM
+                0x000000e4       0x24 ./CONTROL_MainFuncs.o
+                0x000000e4                PassIsSetinEEPROM
+ .text.readPassFromEEPROM
+                0x00000108       0x50 ./CONTROL_MainFuncs.o
+                0x00000108                readPassFromEEPROM
+ .text.updatePassword
+                0x00000158       0x8a ./CONTROL_MainFuncs.o
+                0x00000158                updatePassword
+ .text.passChecked
+                0x000001e2       0xb8 ./CONTROL_MainFuncs.o
+                0x000001e2                passChecked
+ .text.BuzzerError
+                0x0000029a       0x2e ./CONTROL_MainFuncs.o
+                0x0000029a                BuzzerError
+ .text.openDoor
+                0x000002c8       0x2e ./CONTROL_MainFuncs.o
+                0x000002c8                openDoor
+ .text.Timer1_3Sec
+                0x000002f6       0x38 ./CONTROL_MainFuncs.o
+                0x000002f6                Timer1_3Sec
+ .text.Timer1_15Sec
+                0x0000032e       0x64 ./CONTROL_MainFuncs.o
+                0x0000032e                Timer1_15Sec
+ .text.oneMinute
+                0x00000392       0x2c ./CONTROL_MainFuncs.o
+                0x00000392                oneMinute
+ .text.main     0x000003be       0x98 ./Main_CONTROL.o
+                0x000003be                main
+ .text.DcMotor_Init
+                0x00000456       0x36 ./Motor.o
+                0x00000456                DcMotor_Init
+ .text.DcMotor_Rotate
+                0x0000048c       0xf0 ./Motor.o
+                0x0000048c                DcMotor_Rotate
+ .text.PWM_Timer0_Start
+                0x0000057c       0xaa ./PWM.o
+                0x0000057c                PWM_Timer0_Start
+ .text.__vector_7
+                0x00000626       0x66 ./Timer1.o
+                0x00000626                __vector_7
+ .text.__vector_9
+                0x0000068c       0x66 ./Timer1.o
+                0x0000068c                __vector_9
+ .text.Timer1_init
+                0x000006f2      0x224 ./Timer1.o
+                0x000006f2                Timer1_init
+ .text.Timer1_deInit
+                0x00000916       0x38 ./Timer1.o
+                0x00000916                Timer1_deInit
+ .text.TIMER1_COMP_setCallBack
+                0x0000094e       0x24 ./Timer1.o
+                0x0000094e                TIMER1_COMP_setCallBack
+ .text.TIMER1_OVF_setCallBack
+                0x00000972       0x24 ./Timer1.o
+                0x00000972                TIMER1_OVF_setCallBack
+ .text.UART_init
+                0x00000996      0x38e ./USART.o
+                0x00000996                UART_init
+ .text.UART_sendByte
+                0x00000d24       0x2e ./USART.o
+                0x00000d24                UART_sendByte
+ .text.UART_recieveByte
+                0x00000d52       0x1e ./USART.o
+                0x00000d52                UART_recieveByte
+ .text.UART_sendString
+                0x00000d70       0x52 ./USART.o
+                0x00000d70                UART_sendString
+ .text.UART_receiveString
+                0x00000dc2       0x86 ./USART.o
+                0x00000dc2                UART_receiveString
+ .text.EEPROM_writeByte
+                0x00000e48       0x82 ./external_eeprom.o
+                0x00000e48                EEPROM_writeByte
+ .text.EEPROM_readByte
+                0x00000eca       0xc0 ./external_eeprom.o
+                0x00000eca                EEPROM_readByte
+ .text.GPIO_setupPinDirection
+                0x00000f8a      0x1d6 ./gpio.o
+                0x00000f8a                GPIO_setupPinDirection
+ .text.GPIO_writePin
+                0x00001160      0x1d6 ./gpio.o
+                0x00001160                GPIO_writePin
+ .text.GPIO_readPin
+                0x00001336      0x136 ./gpio.o
+                0x00001336                GPIO_readPin
+ .text.GPIO_setupPortDirection
+                0x0000146c       0x88 ./gpio.o
+                0x0000146c                GPIO_setupPortDirection
+ .text.GPIO_writePort
+                0x000014f4       0x88 ./gpio.o
+                0x000014f4                GPIO_writePort
+ .text.GPIO_readPort
+                0x0000157c       0x8a ./gpio.o
+                0x0000157c                GPIO_readPort
+ .text.TWI_init
+                0x00001606       0x6e ./twi.o
+                0x00001606                TWI_init
+ .text.TWI_start
+                0x00001674       0x20 ./twi.o
+                0x00001674                TWI_start
+ .text.TWI_stop
+                0x00001694       0x16 ./twi.o
+                0x00001694                TWI_stop
+ .text.TWI_writeByte
+                0x000016aa       0x2e ./twi.o
+                0x000016aa                TWI_writeByte
+ .text.TWI_readByteWithACK
+                0x000016d8       0x26 ./twi.o
+                0x000016d8                TWI_readByteWithACK
+ .text.TWI_readByteWithNACK
+                0x000016fe       0x26 ./twi.o
+                0x000016fe                TWI_readByteWithNACK
+ .text.TWI_getStatus
+                0x00001724       0x1e ./twi.o
+                0x00001724                TWI_getStatus
+ .text.libgcc   0x00001742        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001742        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001742        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001742                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001742        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001742                exit
+                0x00001742                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001742        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001746                _etext = .
+
+.data           0x00800060       0x10 load address 0x00001746
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./Buzzer.o
+ .data          0x00800060        0x0 ./CONTROL_MainFuncs.o
+ .data          0x00800060        0x0 ./Main_CONTROL.o
+ .data          0x00800060        0x0 ./Motor.o
+ .data          0x00800060        0x0 ./PWM.o
+ .data          0x00800060        0x0 ./Timer1.o
+ .data          0x00800060        0x0 ./USART.o
+ .data          0x00800060        0x0 ./external_eeprom.o
+ .data          0x00800060        0x0 ./gpio.o
+ .data          0x00800060        0x0 ./twi.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.trial    0x00800060        0x1 ./CONTROL_MainFuncs.o
+                0x00800060                trial
+ .data.Sec      0x00800061        0x6 ./CONTROL_MainFuncs.o
+                0x00800061                Sec
+ .data.uartIntialization
+                0x00800067        0x6 ./Main_CONTROL.o
+                0x00800067                uartIntialization
+ .data.twi_Intialization
+                0x0080006d        0x3 ./Main_CONTROL.o
+                0x0080006d                twi_Intialization
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800070                . = ALIGN (0x2)
+                0x00800070                _edata = .
+                0x00800070                PROVIDE (__data_end, .)
+
+.bss            0x00800070       0x2b
+                0x00800070                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800070        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800070        0x0 ./Buzzer.o
+ .bss           0x00800070        0x0 ./CONTROL_MainFuncs.o
+ .bss           0x00800070        0x0 ./Main_CONTROL.o
+ .bss           0x00800070        0x0 ./Motor.o
+ .bss           0x00800070        0x0 ./PWM.o
+ .bss           0x00800070        0x0 ./Timer1.o
+ .bss           0x00800070        0x0 ./USART.o
+ .bss           0x00800070        0x0 ./external_eeprom.o
+ .bss           0x00800070        0x0 ./gpio.o
+ .bss           0x00800070        0x0 ./twi.o
+ .bss           0x00800070        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800070        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800070        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.g_callBackPtr1
+                0x00800070        0x2 ./Timer1.o
+ .bss.g_callBackPtr2
+                0x00800072        0x2 ./Timer1.o
+ *(COMMON)
+ COMMON         0x00800074       0x25 ./CONTROL_MainFuncs.o
+                0x00800074                PassState
+                0x00800075                motorFlag
+                0x00800076                buzzerFlag
+                0x00800077                UART_String
+                0x0080008b                Motor_State
+                0x0080008c                i
+                0x0080008d                passwordOne
+                0x00800097                g_tick
+                0x00800098                Check_State
+ COMMON         0x00800099        0x2 ./Timer1.o
+                0x00800099                init
+                0x0080009b                PROVIDE (__bss_end, .)
+                0x00001746                __data_load_start = LOADADDR (.data)
+                0x00001756                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080009b        0x0
+                0x0080009b                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080009b                PROVIDE (__noinit_end, .)
+                0x0080009b                _end = .
+                0x0080009b                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2820
+ *(.stab)
+ .stab          0x00000000      0x27c ./Buzzer.o
+ .stab          0x0000027c      0x8a0 ./CONTROL_MainFuncs.o
+                                0x978 (size before relaxing)
+ .stab          0x00000b1c      0x288 ./Main_CONTROL.o
+                                0x624 (size before relaxing)
+ .stab          0x00000da4      0x288 ./Motor.o
+                                0x528 (size before relaxing)
+ .stab          0x0000102c      0x210 ./PWM.o
+                                0x4c8 (size before relaxing)
+ .stab          0x0000123c      0x420 ./Timer1.o
+                                0x6f0 (size before relaxing)
+ .stab          0x0000165c      0x57c ./USART.o
+                                0x858 (size before relaxing)
+ .stab          0x00001bd8      0x30c ./external_eeprom.o
+                                0x3e4 (size before relaxing)
+ .stab          0x00001ee4      0x5e8 ./gpio.o
+                                0x870 (size before relaxing)
+ .stab          0x000024cc      0x354 ./twi.o
+                                0x5d0 (size before relaxing)
+
+.stabstr        0x00000000     0x1432
+ *(.stabstr)
+ .stabstr       0x00000000     0x1432 ./Buzzer.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(CONTROl_ECU.elf elf32-avr)
+LOAD linker stubs
